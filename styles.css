@@ -7,7 +7,6 @@
 
 .square{
 	width: 30%;
-	background-color: white;
 	padding: 30px 0;
 	margin-top: 2px;
 	box-sizing: border-box;
@@ -17,6 +16,13 @@
 	border-radius: 30%;
 	background-color: #777;
 }
+
+.square:hover{
+	border: 1px outset blue;
+	background-color: #999;
+	color: black;
+}
+
 .winning-square{
 	background-color: teal !important;
 	color: red !important;

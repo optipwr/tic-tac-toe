@@ -9,6 +9,13 @@
 // 6. Keep player from overwriting a square.
 // 7. We need a win checker...
 
+
+// jQuery Tests
+$(document).ready(function(){
+	
+
+});
+
 var whosTurn = 1;
 var player1Squares = [];
 var player2Squares = [];
@@ -50,7 +57,15 @@ function reset(){
 	someoneWon = false;		
 }
 
+$('.square').click(function(){
+	markSquare(this)
+});
+
 function markSquare(currentSquare){
+	$(currentSquare).css({
+		'color': 'black',
+		'background-color': '#aaa'
+	})
 	if ((currentSquare.innerHTML == "X") || (currentSquare.innerHTML == "O")){
 		// console.log("Someone is there. Stop cheating.");
 		return true;
