@@ -18,7 +18,7 @@
 
 .square:hover{
 	border: 1px outset #1e41ed;
-	background-color: #999;
+	background-color: #aaa;
 	color: black;
 	border-radius: 35%;
 }
