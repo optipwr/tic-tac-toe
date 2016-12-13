@@ -10,7 +10,6 @@
 	padding: 30px 0;
 	margin-top: 2px;
 	box-sizing: border-box;
-	/* float: left; */
 	font-size: 80px;
 	border: 1px solid black;
 	border-radius: 30%;
@@ -18,9 +17,14 @@
 }
 
 .square:hover{
-	border: 1px outset blue;
+	border: 1px outset #1e41ed;
 	background-color: #999;
 	color: black;
+	border-radius: 35%;
+}
+
+.ease{
+	transition: all .3s linear;
 }
 
 .winning-square{
@@ -31,3 +35,4 @@
 .lower-button{
 	margin-top: 10px;
 }
+
